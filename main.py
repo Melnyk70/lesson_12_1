@@ -29,7 +29,7 @@ def delete_html_tags(html_file, result_file='cleaned.txt'):
     cleaned_text = re.sub(r'<[^>]*>', '', html)  # Замінюємо всі підрядки, що відповідають шаблону <...>, на порожній рядок
 
     # Видалення порожніх рядків
-    cleaned_text = ''.join([line.strip() for line in cleaned_text.splitlines() if line.strip()])
+    cleaned_text = ' '.join([line.strip() for line in cleaned_text.splitlines() if line.strip()])
 
     # Відкриваємо вихідний файл для запису в кодуванні UTF-8
     with codecs.open(result_file, 'w', 'utf-8') as outfile:
