@@ -11,14 +11,8 @@
 # скачати і покласти поряд з файлом, де буде вирішення цієї домашки.
 # Додаткове завдання для тих, хто захоче ускладнити рішення - спробуйте прибрати рядки, в яких
 # немає інформації.
-# import codecs
-# def delete_html_tags(html_file, result_file='cleaned.txt'):
-#       with codecs.open(html_file, 'r', 'utf-8') as file:
-#            html = file.read()
-
 import codecs  # Імпортуємо модуль codecs для роботи з файлами з підтримкою кодувань
 import re  # Імпортуємо модуль re для роботи з регулярними виразами
-
 
 def delete_html_tags(html_file, result_file='cleaned.txt'):
     '''
